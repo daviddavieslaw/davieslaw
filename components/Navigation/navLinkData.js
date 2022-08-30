@@ -25,6 +25,6 @@ export const NavLinkData = [
     },
     {
         title: 'Contact',
-        location: '/contact'
+        location: '/#contact'
     }
 ]

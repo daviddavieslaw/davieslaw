@@ -1,7 +1,7 @@
 
 const Footer = () => {
     return (
-        <footer className='flex flex-col items-center py-5 dark:bg-black dark:text-slate-200 font-garamond '>
+        <footer id="contact" className='flex flex-col items-center py-5 dark:bg-black dark:text-slate-200 font-garamond '>
             <div className='flex flex-col items-center justify-around w-full lg:flex-row gap-y-10'>
                 <div className=''>
                     <iframe
@@ -19,6 +19,7 @@ const Footer = () => {
                     <p>1972 Dave Ward Dr, Conway, AR 72032</p>
                     <p>(501) 358-4422 (Phone)</p>
                     <p>(501) 358-4933 (Fax)</p>
+                    <p>david@daviddavieslaw.com</p>
                 </div>
                 <div className='flex flex-col pb-8 text-center lg:items-start gap-y-2'>
                     <h4 className='text-xl font-bold'>Hours</h4>
