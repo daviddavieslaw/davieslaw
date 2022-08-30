@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  overflow-x: hidden;
+}
+
+html.dark body {
+  background-color: black;
+}
+
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Navigation Styling */
+#mobileMenuTrigger {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+#mobileMenuTrigger div {
+  width: 30px;
+  height: 3px;
+  background-color: #fff;
+  margin: 5px;
+  border-radius: 5px;
+  transition: transform 0.5s ease;
+}
+
+html.light #mobileMenuTrigger div {
+  background-color: #000;
+}
+
+.menuToggle .line1 {
+  transform: rotate(-45deg) translate(-7px, 6px);
+}
+
+.menuToggle .line2 {
+  opacity: 0;
+}
+
+.menuToggle .line3 {
+  transform: rotate(45deg) translate(-5.2px, -4px);
+}
+
+@media screen and (min-width: 1236px) {
+  #mobileMenuTrigger {
+    display: none;
+  }
+}
+
+
+
+@media screen and (min-width: 1025px) {
+
+  .hero__cta {
+    padding: 8px 16px;
+    margin-top: 16px;
+    background: linear-gradient(to right, #000, #fff);
+    background-size: 0;
+    background-position: left;
+    transition: all 0.6s ease-in-out;
+    background-repeat: no-repeat;
+    font-size: clamp(1rem, 5vw, 1.4rem);
+  }
+
+  .hero__cta:hover {
+    background-size: 300%;
+  }
+
+}
+
+.accordian-trigger {
+  position: relative;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 1.6rem;
+  height: 15px;
+  width: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Vertical Bar */
+.accordian-trigger::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  transition: opacity 0.5s ease;
+  background: -webkit-linear-gradient(#cacaca, #adadad);
+}
+
+/* Vertical Bar */
+.accordian-active::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  opacity: 0;
+  background: -webkit-linear-gradient(#cacaca, #989898);
+}
+
+/* Horizontal Bar */
+.accordian-trigger::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  transform: rotateZ(90deg);
+  background: -webkit-linear-gradient(#cacaca, #9f9f9f);
+}
+
+.accordian .content {
+  display: none;
+  border-radius: 16px;
+  overflow-y: hidden;
+  max-width: 1200px;
+  margin-right: auto;
+  line-height: 1.7rem;
+  transition: all 1s ease;
+  opacity: 0;
+}
+
+.accordian .accordian-active {
+  display: block;
+  max-height: 400px;
+  overflow-y: visible;
+  transition: all 1s ease;
+  opacity: 1;
+}

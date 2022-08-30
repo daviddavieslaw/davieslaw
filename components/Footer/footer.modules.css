@@ -1,0 +1,16 @@
+/* Footer Styling & Media Queries */
+
+
+@media screen and (min-width: 769px) {
+
+}
+
+
+@media screen and (min-width: 1025px) {
+    footer {
+        font-family: 'Red Hat Text';
+        font-size: 0.9rem;
+        padding: 10px;
+        text-align: center;
+    }
+}
