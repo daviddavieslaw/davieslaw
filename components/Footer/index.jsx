@@ -14,12 +14,12 @@ const Footer = () => {
                         className='rounded-lg' />
                 </div>
                 <div className='flex flex-col text-center lg:text-left gap-y-2' >
-                    <h4 className='text-xl font-bold '>The Law Offices of David Davies, PLLC</h4>
+                    <h4 className='text-xl font-bold '>Davies Law Firm, PLLC</h4>
 
                     <p>1972 Dave Ward Dr, Conway, AR 72032</p>
                     <p>(501) 358-4422 (Phone)</p>
                     <p>(501) 358-4933 (Fax)</p>
-                    <p>david@daviddavieslaw.com</p>
+                    <p>karri@daviddavieslaw.com</p>
                 </div>
                 <div className='flex flex-col pb-8 text-center lg:items-start gap-y-2'>
                     <h4 className='text-xl font-bold'>Hours</h4>
