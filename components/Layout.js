@@ -7,7 +7,7 @@ const Layout = ({ children, title }) => {
     return (
         <>
             <Head>
-                <title>{title && pageTitle || "Davies Law Firm"} </title>
+                <title>{title ? pageTitle : "Davies Law Firm"}</title>
                 <meta name="description" content="Davies Law Firm, PLLC - Protecting and Providing for Those You Love" />
                 <link rel="icon" href="/favicon/favicon.png" />
 

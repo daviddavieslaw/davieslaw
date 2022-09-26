@@ -11,7 +11,7 @@ const About = () => {
                     {/* Mobile Image */}
                     <div className='block md:hidden'>
                         <Image
-                            src="/david-davies.jpg"
+                            src="/david.jpg"
                             alt="bup phone mockup"
                             className="mr-4 rounded-lg "
                             width="300"
@@ -25,11 +25,11 @@ const About = () => {
                     {/* 1024px and Up Image */}
                     <div className='hidden md:block'>
                         <Image
-                            src="/david-davies.jpg"
+                            src="/david.jpg"
                             alt="bup phone mockup"
                             className="mr-4 rounded-lg md:float-left"
-                            height="360"
-                            width="360"
+                            height="350"
+                            width="350"
                             quality={100}
                             blurDataURL="/hero-blur.png"
                             placeholder="blur"
